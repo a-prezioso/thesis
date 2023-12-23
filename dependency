@@ -1,0 +1,616 @@
+PS C:\Users\aprez\Desktop\Alex\IT\Workspace\Personali\thesis> mvn dependency:tree -Dverbose
+[INFO] Scanning for projects...
+[INFO]
+[INFO] -------------------------< com.example:thesis >-------------------------
+[INFO] Building thesis 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-dependency-plugin:3.3.0:tree (default-cli) @ thesis ---
+[WARNING] The POM for org.apache.datasketches:datasketches-memory-java8:jar:2.1.0 is missing, no dependency information available
+[WARNING] The POM for org.apache.datasketches:datasketches-memory-java11:jar:2.1.0 is missing, no dependency information available
+[INFO] com.example:thesis:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:2.7.13:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:2.7.13:compile (version managed from 2.7.13)
+[INFO] |  |  +- org.springframework.boot:spring-boot:jar:2.7.13:compile (version managed from 2.7.13)
+[INFO] |  |  |  +- (org.springframework:spring-core:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |  |  |  \- (org.springframework:spring-context:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.7.13:compile (version managed from 2.7.13)
+[INFO] |  |  |  \- (org.springframework.boot:spring-boot:jar:2.7.13:compile - version managed from 2.7.13; omitted for duplicate)
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.7.13:compile (version managed from 2.7.13)
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.2.12:compile (version managed from 1.2.12)
+[INFO] |  |  |  |  +- ch.qos.logback:logback-core:jar:1.2.12:compile (version managed from 1.2.12)
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.32; omitted for duplicate)
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile (version managed from 2.17.2)
+[INFO] |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.35; omitted for duplicate)
+[INFO] |  |  |  |  \- (org.apache.logging.log4j:log4j-api:jar:2.17.2:compile - version managed from 2.17.2; omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:jul-to-slf4j:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile (version managed from 1.3.5)
+[INFO] |  |  +- org.springframework:spring-core:jar:5.3.28:compile (version managed from 5.3.28)
+[INFO] |  |  |  \- org.springframework:spring-jcl:jar:5.3.28:compile (version managed from 5.3.28)
+[INFO] |  |  \- org.yaml:snakeyaml:jar:1.30:compile (version managed from 1.30)
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:2.7.13:compile (version managed from 2.7.13)
+[INFO] |  |  +- (org.springframework.boot:spring-boot-starter:jar:2.7.13:compile - version managed from 2.7.13; omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-web:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.13.5; omitted for duplicate)
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.5:compile (version managed from 2.13.5)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile - version managed from 2.13.5; omitted for duplicate)
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.13.5; omitted for duplicate)
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.5:compile (version managed from 2.13.5)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile - version managed from 2.13.5; omitted for duplicate)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile - version managed from 2.13.5; omitted for duplicate)
+[INFO] |  |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.13.5; omitted for duplicate)
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.5:compile (version managed from 2.13.5)
+[INFO] |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile - version managed from 2.13.5; omitted for duplicate)
+[INFO] |  |     \- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.13.5; omitted for duplicate)
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.7.13:compile (version managed from 2.7.13)
+[INFO] |  |  +- (jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile - version managed from 1.3.5; omitted for duplicate)
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.76:compile (version managed from 9.0.76)
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.76:compile (version managed from 9.0.76)
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.76:compile (version managed from 9.0.76)
+[INFO] |  |     \- (org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.76:compile - version managed from 9.0.76; omitted for duplicate)
+[INFO] |  +- org.springframework:spring-web:jar:5.3.28:compile (version managed from 5.3.28)
+[INFO] |  |  +- org.springframework:spring-beans:jar:5.3.28:compile (version managed from 5.3.28)
+[INFO] |  |  |  \- (org.springframework:spring-core:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |  |  \- (org.springframework:spring-core:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |  \- org.springframework:spring-webmvc:jar:5.3.28:compile (version managed from 5.3.28)
+[INFO] |     +- org.springframework:spring-aop:jar:5.3.28:compile (version managed from 5.3.28)
+[INFO] |     |  +- (org.springframework:spring-beans:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     |  \- (org.springframework:spring-core:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-beans:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     +- org.springframework:spring-context:jar:5.3.28:compile (version managed from 5.3.28)
+[INFO] |     |  +- (org.springframework:spring-aop:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     |  +- (org.springframework:spring-beans:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     |  +- (org.springframework:spring-core:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     |  \- (org.springframework:spring-expression:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-core:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     +- org.springframework:spring-expression:jar:5.3.28:compile (version managed from 5.3.28)
+[INFO] |     |  \- (org.springframework:spring-core:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] |     \- (org.springframework:spring-web:jar:5.3.28:compile - version managed from 5.3.28; omitted for duplicate)
+[INFO] +- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO] +- org.apache.spark:spark-sql_2.13:jar:3.5.0:compile
+[INFO] |  +- org.rocksdb:rocksdbjni:jar:8.3.2:compile
+[INFO] |  +- com.univocity:univocity-parsers:jar:2.9.1:compile
+[INFO] |  +- org.apache.spark:spark-sketch_2.13:jar:3.5.0:compile
+[INFO] |  |  \- (org.apache.spark:spark-tags_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  +- (org.apache.spark:spark-core_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  +- org.apache.spark:spark-catalyst_2.13:jar:3.5.0:compile
+[INFO] |  |  +- (org.apache.spark:spark-core_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- org.apache.spark:spark-sql-api_2.13:jar:3.5.0:compile
+[INFO] |  |  |  +- (org.scala-lang:scala-reflect:jar:2.13.8:compile - omitted for duplicate)
+[INFO] |  |  |  +- org.scala-lang.modules:scala-parser-combinators_2.13:jar:2.3.0:compile
+[INFO] |  |  |  |  \- (org.scala-lang:scala-library:jar:2.13.10:compile - omitted for conflict with 2.13.8)
+[INFO] |  |  |  +- (org.apache.spark:spark-common-utils_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.spark:spark-unsafe_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.json4s:json4s-jackson_2.13:jar:3.7.0-M11:compile - omitted for duplicate)
+[INFO] |  |  |  +- org.antlr:antlr4-runtime:jar:4.9.3:compile
+[INFO] |  |  |  +- org.apache.arrow:arrow-vector:jar:12.0.1:compile
+[INFO] |  |  |  |  +- org.apache.arrow:arrow-format:jar:12.0.1:compile
+[INFO] |  |  |  |  |  \- (com.google.flatbuffers:flatbuffers-java:jar:1.12.0:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- org.apache.arrow:arrow-memory-core:jar:12.0.1:compile
+[INFO] |  |  |  |  |  +- (com.google.code.findbugs:jsr305:jar:3.0.2:compile - omitted for conflict with 3.0.0)
+[INFO] |  |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.25; omitted for duplicate)
+[INFO] |  |  |  |  |  \- (org.immutables:value:jar:2.8.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.15.1; omitted for duplicate)
+[INFO] |  |  |  |  +- (com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.5:compile - version managed from 2.15.1; omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-codec:commons-codec:jar:1.15:compile - version managed from 1.15; omitted for duplicate)
+[INFO] |  |  |  |  +- com.google.flatbuffers:flatbuffers-java:jar:1.12.0:compile
+[INFO] |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.25; omitted for duplicate)
+[INFO] |  |  |  \- org.apache.arrow:arrow-memory-netty:jar:12.0.1:compile
+[INFO] |  |  |     +- (org.apache.arrow:arrow-memory-core:jar:12.0.1:compile - omitted for duplicate)
+[INFO] |  |  |     +- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.25; omitted for duplicate)
+[INFO] |  |  |     \- org.immutables:value:jar:2.8.2:provided
+[INFO] |  |  +- (org.apache.spark:spark-tags_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.apache.spark:spark-unsafe_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.apache.spark:spark-sketch_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.scala-lang.modules:scala-parallel-collections_2.13:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |  |  +- org.codehaus.janino:janino:jar:3.1.9:compile (version managed from 3.1.9)
+[INFO] |  |  |  \- (org.codehaus.janino:commons-compiler:jar:3.1.9:compile - version managed from 3.1.9; omitted for duplicate)
+[INFO] |  |  +- org.codehaus.janino:commons-compiler:jar:3.1.9:compile (version managed from 3.1.9)
+[INFO] |  |  +- (commons-codec:commons-codec:jar:1.15:compile - version managed from 1.16.0; omitted for duplicate)
+[INFO] |  |  +- (com.univocity:univocity-parsers:jar:2.9.1:compile - omitted for duplicate)
+[INFO] |  |  \- org.apache.datasketches:datasketches-java:jar:3.3.0:compile
+[INFO] |  |     \- org.apache.datasketches:datasketches-memory:jar:2.1.0:compile
+[INFO] |  |        +- org.apache.datasketches:datasketches-memory-java8:jar:2.1.0:provided
+[INFO] |  |        \- org.apache.datasketches:datasketches-memory-java11:jar:2.1.0:provided
+[INFO] |  +- org.apache.spark:spark-tags_2.13:jar:3.5.0:compile
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.13.8:compile - omitted for duplicate)
+[INFO] |  +- org.scala-lang.modules:scala-parallel-collections_2.13:jar:1.0.4:compile
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.13.6:compile - omitted for conflict with 2.13.8)
+[INFO] |  +- org.apache.orc:orc-core:jar:shaded-protobuf:1.9.1:compile
+[INFO] |  |  +- org.apache.orc:orc-shims:jar:1.9.1:compile
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 2.0.7; omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-lang3:jar:3.12.0:compile - version managed from 3.12.0; omitted for duplicate)
+[INFO] |  |  +- io.airlift:aircompressor:jar:0.25:compile
+[INFO] |  |  |  \- io.trino.hadoop:hadoop-apache:jar:3.2.0-17:provided
+[INFO] |  |  +- org.jetbrains:annotations:jar:17.0.0:compile
+[INFO] |  |  +- org.slf4j:slf4j-api:jar:1.7.36:compile (version managed from 2.0.7; scope not updated to compile)
+[INFO] |  |  \- org.threeten:threeten-extra:jar:1.7.1:compile
+[INFO] |  +- org.apache.orc:orc-mapreduce:jar:shaded-protobuf:1.9.1:compile
+[INFO] |  |  \- (org.apache.commons:commons-lang3:jar:3.12.0:compile - version managed from 3.12.0; omitted for duplicate)
+[INFO] |  +- org.apache.hive:hive-storage-api:jar:2.8.1:compile
+[INFO] |  |  +- org.apache.hadoop:hadoop-common:jar:3.1.0:provided
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-annotations:jar:3.1.0:provided - omitted for conflict with 3.2.3)
+[INFO] |  |  |  +- (commons-cli:commons-cli:jar:1.2:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.commons:commons-math3:jar:3.1.1:provided - omitted for conflict with 3.6.1)
+[INFO] |  |  |  +- (commons-codec:commons-codec:jar:1.15:provided - version managed from 1.11; omitted for duplicate)
+[INFO] |  |  |  +- (commons-io:commons-io:jar:2.5:provided - omitted for conflict with 2.13.0)
+[INFO] |  |  |  +- commons-net:commons-net:jar:3.6:provided
+[INFO] |  |  |  +- (commons-collections:commons-collections:jar:3.2.2:provided - omitted for duplicate)
+[INFO] |  |  |  +- javax.servlet:javax.servlet-api:jar:4.0.1:provided (version managed from 3.1.0)
+[INFO] |  |  |  +- (org.eclipse.jetty:jetty-server:jar:9.4.51.v20230217:provided - version managed from 9.3.19.v20170502; omitted for duplicate)
+[INFO] |  |  |  +- org.eclipse.jetty:jetty-util:jar:9.4.51.v20230217:provided (version managed from 9.3.19.v20170502)
+[INFO] |  |  |  |  \- (javax.servlet:javax.servlet-api:jar:4.0.1:provided - version managed from 3.1.0; omitted for duplicate)
+[INFO] |  |  |  +- (org.eclipse.jetty:jetty-servlet:jar:9.4.51.v20230217:provided - version managed from 9.3.19.v20170502; omitted for duplicate)
+[INFO] |  |  |  +- org.eclipse.jetty:jetty-webapp:jar:9.4.51.v20230217:provided (version managed from 9.3.19.v20170502)
+[INFO] |  |  |  |  +- org.eclipse.jetty:jetty-xml:jar:9.4.51.v20230217:provided (version managed from 9.4.51.v20230217)
+[INFO] |  |  |  |  |  \- (org.eclipse.jetty:jetty-util:jar:9.4.51.v20230217:provided - version managed from 9.4.51.v20230217; omitted for duplicate)
+[INFO] |  |  |  |  \- (org.eclipse.jetty:jetty-servlet:jar:9.4.51.v20230217:provided - version managed from 9.4.51.v20230217; omitted for duplicate)
+[INFO] |  |  |  +- com.sun.jersey:jersey-core:jar:1.19:provided
+[INFO] |  |  |  |  +- javax.ws.rs:jsr311-api:jar:1.1.1:provided
+[INFO] |  |  |  |  +- javax.mail:mail:jar:1.4:provided
+[INFO] |  |  |  |  |  \- (javax.activation:activation:jar:1.1:provided - omitted for conflict with 1.1.1)
+[INFO] |  |  |  |  +- javax.xml.bind:jaxb-api:jar:2.3.1:provided (version managed from 2.1)
+[INFO] |  |  |  |  |  \- javax.activation:javax.activation-api:jar:1.2.0:provided (version managed from 1.2.0)
+[INFO] |  |  |  |  \- (org.osgi:org.osgi.core:jar:4.2.0:provided - omitted for conflict with 6.0.0)
+[INFO] |  |  |  +- com.sun.jersey:jersey-servlet:jar:1.19:provided
+[INFO] |  |  |  |  +- (javax.servlet:javax.servlet-api:jar:4.0.1:provided - version managed from 3.0.1; omitted for duplicate)
+[INFO] |  |  |  |  +- javax.servlet:jsp-api:jar:2.0:provided
+[INFO] |  |  |  |  +- org.glassfish:javax.ejb:jar:3.1:provided
+[INFO] |  |  |  |  |  +- org.glassfish:javax.transaction:jar:3.1:provided
+[INFO] |  |  |  |  |  \- org.glassfish:javax.annotation:jar:3.1:provided
+[INFO] |  |  |  |  +- org.jboss.weld:weld-osgi-bundle:jar:1.1.4.Final:provided
+[INFO] |  |  |  |  |  +- javax.enterprise:cdi-api:jar:1.0-SP4:provided
+[INFO] |  |  |  |  |  |  +- org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:jar:1.0.0.Beta1:provided
+[INFO] |  |  |  |  |  |  +- (javax.annotation:jsr250-api:jar:1.0:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  \- (javax.inject:javax.inject:jar:1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  +- org.jboss.weld:weld-api:jar:1.1.Final:provided
+[INFO] |  |  |  |  |  |  \- (javax.enterprise:cdi-api:jar:1.0-SP3:provided - omitted for conflict with 1.0-SP4)
+[INFO] |  |  |  |  |  +- org.jboss.weld:weld-core:jar:1.1.4.Final:provided
+[INFO] |  |  |  |  |  |  +- (javax.enterprise:cdi-api:jar:1.0-SP4:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- (org.jboss.weld:weld-api:jar:1.1.Final:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- (org.jboss.weld:weld-spi:jar:1.1.Final:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- (javax.annotation:jsr250-api:jar:1.0:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- (org.javassist:javassist:jar:3.14.0-GA:provided - omitted for conflict with 3.25.0-GA)
+[INFO] |  |  |  |  |  |  +- (org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:jar:1.0.0.Beta1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- (org.jboss.interceptor:jboss-interceptor-spi:jar:2.0.0.CR1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- (org.jboss.interceptor:jboss-interceptor-core:jar:2.0.0.CR1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- org.slf4j:slf4j-ext:jar:1.7.36:provided (version managed from 1.5.10)
+[INFO] |  |  |  |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- ch.qos.cal10n:cal10n-api:jar:0.7.2:provided
+[INFO] |  |  |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.5.10; omitted for duplicate)
+[INFO] |  |  |  |  |  |  \- (org.jboss.weld:weld-build-config:jar:1.1.4.Final:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  +- org.jboss.weld:weld-spi:jar:1.1.Final:provided
+[INFO] |  |  |  |  |  |  +- (javax.enterprise:cdi-api:jar:1.0-SP3:provided - omitted for conflict with 1.0-SP4)
+[INFO] |  |  |  |  |  |  \- (org.jboss.weld:weld-api:jar:1.1.Final:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  +- (org.javassist:javassist:jar:3.14.0-GA:provided - omitted for conflict with 3.25.0-GA)
+[INFO] |  |  |  |  |  +- (javax.inject:javax.inject:jar:1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  +- org.jboss.interceptor:jboss-interceptor-spi:jar:2.0.0.CR1:provided
+[INFO] |  |  |  |  |  |  \- (org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.1_spec:jar:1.0.0.Beta1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  +- org.jboss.interceptor:jboss-interceptor-core:jar:2.0.0.CR1:provided
+[INFO] |  |  |  |  |  |  +- (org.jboss.interceptor:jboss-interceptor-spi:jar:2.0.0.CR1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.5.6; omitted for duplicate)
+[INFO] |  |  |  |  |  |  \- javassist:javassist:jar:3.12.0.GA:provided
+[INFO] |  |  |  |  |  +- org.slf4j:slf4j-jdk14:jar:1.7.36:provided (version managed from 1.5.10)
+[INFO] |  |  |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  |  |  |  |  \- org.jboss.weld:weld-build-config:jar:1.1.4.Final:provided
+[INFO] |  |  |  |  +- javax.persistence:persistence-api:jar:1.0:provided
+[INFO] |  |  |  |  +- ant:ant:jar:1.6.5:provided
+[INFO] |  |  |  |  +- org.osgi:osgi_R4_core:jar:1.0:provided
+[INFO] |  |  |  |  \- (com.sun.jersey:jersey-server:jar:1.19:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.sun.jersey:jersey-json:jar:1.19:provided
+[INFO] |  |  |  |  +- org.codehaus.jettison:jettison:jar:1.1:provided
+[INFO] |  |  |  |  +- com.sun.xml.bind:jaxb-impl:jar:2.2.3-1:provided
+[INFO] |  |  |  |  |  \- (javax.xml.bind:jaxb-api:jar:2.3.1:provided - version managed from 2.2.2; omitted for duplicate)
+[INFO] |  |  |  |  +- org.codehaus.jackson:jackson-core-asl:jar:1.9.2:provided
+[INFO] |  |  |  |  +- org.codehaus.jackson:jackson-mapper-asl:jar:1.9.2:provided
+[INFO] |  |  |  |  |  \- (org.codehaus.jackson:jackson-core-asl:jar:1.9.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- org.codehaus.jackson:jackson-jaxrs:jar:1.9.2:provided
+[INFO] |  |  |  |  |  +- (org.codehaus.jackson:jackson-core-asl:jar:1.9.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  \- (org.codehaus.jackson:jackson-mapper-asl:jar:1.9.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- org.codehaus.jackson:jackson-xc:jar:1.9.2:provided
+[INFO] |  |  |  |  |  +- (org.codehaus.jackson:jackson-core-asl:jar:1.9.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  \- (org.codehaus.jackson:jackson-mapper-asl:jar:1.9.2:provided - omitted for duplicate)
+[INFO] |  |  |  |  \- (com.sun.jersey:jersey-core:jar:1.19:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.sun.jersey:jersey-server:jar:1.19:provided
+[INFO] |  |  |  |  +- (javax.mail:mail:jar:1.4:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (javax.xml.bind:jaxb-api:jar:2.3.1:provided - version managed from 2.1; omitted for duplicate)
+[INFO] |  |  |  |  +- javax.annotation:jsr250-api:jar:1.0:provided
+[INFO] |  |  |  |  +- (org.osgi:osgi_R4_core:jar:1.0:provided - omitted for duplicate)
+[INFO] |  |  |  |  \- (com.sun.jersey:jersey-core:jar:1.19:provided - omitted for duplicate)
+[INFO] |  |  |  +- log4j:log4j:jar:1.2.17:provided
+[INFO] |  |  |  |  \- org.apache.openejb:javaee-api:jar:5.0-2:provided
+[INFO] |  |  |  +- org.apache.commons:commons-configuration2:jar:2.1.1:provided
+[INFO] |  |  |  |  \- xml-apis:xml-apis:jar:1.0.b2:provided
+[INFO] |  |  |  +- (org.apache.commons:commons-lang3:jar:3.12.0:provided - version managed from 3.4; omitted for duplicate)
+[INFO] |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.7.25; omitted for duplicate)
+[INFO] |  |  |  +- com.google.re2j:re2j:jar:1.1:provided
+[INFO] |  |  |  +- (com.google.protobuf:protobuf-java:jar:2.5.0:provided - omitted for conflict with 3.23.4)
+[INFO] |  |  |  +- com.google.code.gson:gson:jar:2.9.1:compile (version managed from 2.2.4)
+[INFO] |  |  |  +- org.apache.hadoop:hadoop-auth:jar:3.1.0:provided
+[INFO] |  |  |  |  +- (org.apache.hadoop:hadoop-annotations:jar:3.1.0:provided - omitted for conflict with 3.2.3)
+[INFO] |  |  |  |  +- (javax.servlet:javax.servlet-api:jar:4.0.1:provided - version managed from 3.1.0; omitted for duplicate)
+[INFO] |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.7.25; omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-codec:commons-codec:jar:1.15:provided - version managed from 1.11; omitted for duplicate)
+[INFO] |  |  |  |  +- (log4j:log4j:jar:1.2.17:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- com.nimbusds:nimbus-jose-jwt:jar:4.41.1:provided
+[INFO] |  |  |  |  |  \- com.github.stephenc.jcip:jcip-annotations:jar:1.0-1:provided
+[INFO] |  |  |  |  +- net.minidev:json-smart:jar:2.4.11:provided (version managed from 2.3)
+[INFO] |  |  |  |  |  \- net.minidev:accessors-smart:jar:2.4.11:provided
+[INFO] |  |  |  |  |     \- org.ow2.asm:asm:jar:9.3:provided
+[INFO] |  |  |  |  \- (org.apache.kerby:kerb-simplekdc:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  +- com.jcraft:jsch:jar:0.1.54:provided
+[INFO] |  |  |  +- org.apache.htrace:htrace-core4:jar:4.1.0-incubating:provided
+[INFO] |  |  |  +- (org.apache.commons:commons-compress:jar:1.4.1:provided - omitted for conflict with 1.23.0)
+[INFO] |  |  |  +- org.apache.kerby:kerb-simplekdc:jar:1.0.1:provided
+[INFO] |  |  |  |  +- org.apache.kerby:kerb-client:jar:1.0.1:provided
+[INFO] |  |  |  |  |  +- org.apache.kerby:kerby-config:jar:1.0.1:provided
+[INFO] |  |  |  |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.7.25; omitted for duplicate)
+[INFO] |  |  |  |  |  +- org.apache.kerby:kerb-core:jar:1.0.1:provided
+[INFO] |  |  |  |  |  |  \- org.apache.kerby:kerby-pkix:jar:1.0.1:provided
+[INFO] |  |  |  |  |  |     +- org.apache.kerby:kerby-asn1:jar:1.0.1:provided
+[INFO] |  |  |  |  |  |     +- org.apache.kerby:kerby-util:jar:1.0.1:provided
+[INFO] |  |  |  |  |  |     \- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.7.25; omitted for duplicate)
+[INFO] |  |  |  |  |  +- org.apache.kerby:kerb-common:jar:1.0.1:provided
+[INFO] |  |  |  |  |  |  +- (org.apache.kerby:kerby-config:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- org.apache.kerby:kerb-crypto:jar:1.0.1:provided
+[INFO] |  |  |  |  |  |  |  +- (org.apache.kerby:kerby-util:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  |  \- (org.apache.kerby:kerb-core:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  \- (commons-io:commons-io:jar:2.5:provided - omitted for conflict with 2.13.0)
+[INFO] |  |  |  |  |  +- org.apache.kerby:kerb-util:jar:1.0.1:provided
+[INFO] |  |  |  |  |  |  +- (org.apache.kerby:kerby-config:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  +- (org.apache.kerby:kerb-core:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  \- (org.apache.kerby:kerb-crypto:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  \- org.apache.kerby:token-provider:jar:1.0.1:provided
+[INFO] |  |  |  |  |     +- (org.apache.kerby:kerb-core:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |     \- (com.nimbusds:nimbus-jose-jwt:jar:3.10:provided - omitted for conflict with 4.41.1)
+[INFO] |  |  |  |  \- org.apache.kerby:kerb-admin:jar:1.0.1:provided
+[INFO] |  |  |  |     +- org.apache.kerby:kerb-server:jar:1.0.1:provided
+[INFO] |  |  |  |     |  +- (org.apache.kerby:kerb-common:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |     |  \- org.apache.kerby:kerb-identity:jar:1.0.1:provided
+[INFO] |  |  |  |     |     +- (org.apache.kerby:kerby-config:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |     |     \- (org.apache.kerby:kerb-core:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |     +- (org.apache.kerby:kerb-util:jar:1.0.1:provided - omitted for duplicate)
+[INFO] |  |  |  |     \- org.apache.kerby:kerby-xdr:jar:1.0.1:provided
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:provided - version managed from 2.7.8; omitted for duplicate)
+[INFO] |  |  |  +- org.codehaus.woodstox:stax2-api:jar:3.1.4:provided
+[INFO] |  |  |  |  \- javax.xml.stream:stax-api:jar:1.0-2:provided
+[INFO] |  |  |  \- com.fasterxml.woodstox:woodstox-core:jar:5.0.3:provided
+[INFO] |  |  |     +- (javax.xml.stream:stax-api:jar:1.0-2:provided - omitted for duplicate)
+[INFO] |  |  |     \- (org.codehaus.woodstox:stax2-api:jar:3.1.4:provided - omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.30; omitted for duplicate)
+[INFO] |  +- org.apache.parquet:parquet-column:jar:1.13.1:compile
+[INFO] |  |  +- org.apache.parquet:parquet-common:jar:1.13.1:compile
+[INFO] |  |  |  +- (org.apache.parquet:parquet-format-structures:jar:1.13.1:compile - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.22; omitted for duplicate)
+[INFO] |  |  +- org.apache.parquet:parquet-encoding:jar:1.13.1:compile
+[INFO] |  |  |  +- (org.apache.parquet:parquet-common:jar:1.13.1:compile - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.22; omitted for duplicate)
+[INFO] |  |  +- org.apache.yetus:audience-annotations:jar:0.13.0:compile
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.22; omitted for duplicate)
+[INFO] |  +- org.apache.parquet:parquet-hadoop:jar:1.13.1:compile
+[INFO] |  |  +- (org.apache.parquet:parquet-column:jar:1.13.1:compile - omitted for duplicate)
+[INFO] |  |  +- org.apache.parquet:parquet-format-structures:jar:1.13.1:compile
+[INFO] |  |  |  \- org.apache.thrift:libthrift:jar:0.16.0:provided
+[INFO] |  |  |     +- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 1.7.35; omitted for duplicate)
+[INFO] |  |  |     +- org.apache.httpcomponents:httpclient:jar:4.5.14:provided (version managed from 4.5.13)
+[INFO] |  |  |     |  +- (org.apache.httpcomponents:httpcore:jar:4.4.16:provided - version managed from 4.4.16; omitted for duplicate)
+[INFO] |  |  |     |  \- (commons-codec:commons-codec:jar:1.15:provided - version managed from 1.11; omitted for duplicate)
+[INFO] |  |  |     +- org.apache.httpcomponents:httpcore:jar:4.4.16:provided (version managed from 4.4.15)
+[INFO] |  |  |     +- (javax.servlet:javax.servlet-api:jar:4.0.1:provided - version managed from 4.0.1; omitted for duplicate)
+[INFO] |  |  |     \- (org.apache.commons:commons-lang3:jar:3.12.0:provided - version managed from 3.12.0; omitted for duplicate)
+[INFO] |  |  +- (org.apache.parquet:parquet-common:jar:1.13.1:compile - omitted for duplicate)
+[INFO] |  |  +- org.apache.hadoop:hadoop-client:jar:3.2.3:provided
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-common:jar:3.2.3:provided - omitted for conflict with 3.1.0)
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-mapreduce-client-core:jar:3.2.3:provided - omitted for duplicate)
+[INFO] |  |  |  \- (org.apache.hadoop:hadoop-annotations:jar:3.2.3:provided - omitted for duplicate)
+[INFO] |  |  +- (org.apache.hadoop:hadoop-common:jar:3.2.3:provided - omitted for conflict with 3.1.0)
+[INFO] |  |  +- org.apache.hadoop:hadoop-mapreduce-client-core:jar:3.2.3:provided
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:provided - version managed from 2.10.5.1; omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-common:jar:3.2.3:provided - omitted for conflict with 3.1.0)
+[INFO] |  |  |  +- (org.apache.hadoop:hadoop-annotations:jar:3.2.3:provided - omitted for duplicate)
+[INFO] |  |  |  +- (commons-logging:commons-logging:jar:1.1.3:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.google.guava:guava:jar:27.0-jre:provided - omitted for conflict with 14.0.1)
+[INFO] |  |  |  +- (commons-codec:commons-codec:jar:1.15:provided - version managed from 1.11; omitted for duplicate)
+[INFO] |  |  |  +- (commons-cli:commons-cli:jar:1.2:provided - omitted for duplicate)
+[INFO] |  |  |  \- (commons-collections:commons-collections:jar:3.2.2:provided - omitted for duplicate)
+[INFO] |  |  +- org.apache.hadoop:hadoop-annotations:jar:3.2.3:provided
+[INFO] |  |  |  \- jdiff:jdiff:jar:1.0.9:provided
+[INFO] |  |  +- org.apache.parquet:parquet-jackson:jar:1.13.1:runtime
+[INFO] |  |  +- (org.xerial.snappy:snappy-java:jar:1.1.8.3:compile - omitted for conflict with 1.1.10.3)
+[INFO] |  |  +- (io.airlift:aircompressor:jar:0.21:compile - omitted for conflict with 0.25)
+[INFO] |  |  +- (com.github.luben:zstd-jni:jar:1.5.0-1:compile - omitted for conflict with 1.5.5-4)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.22; omitted for duplicate)
+[INFO] |  |  \- (org.apache.yetus:audience-annotations:jar:0.13.0:compile - omitted for duplicate)
+[INFO] |  +- org.eclipse.jetty:jetty-servlet:jar:9.4.51.v20230217:provided (version managed from 9.4.52.v20230823)
+[INFO] |  |  +- org.eclipse.jetty:jetty-security:jar:9.4.51.v20230217:provided (version managed from 9.4.51.v20230217)
+[INFO] |  |  |  \- (org.eclipse.jetty:jetty-server:jar:9.4.51.v20230217:provided - version managed from 9.4.51.v20230217; omitted for duplicate)
+[INFO] |  |  \- org.eclipse.jetty:jetty-util-ajax:jar:9.4.51.v20230217:provided (version managed from 9.4.51.v20230217)
+[INFO] |  |     +- (org.eclipse.jetty:jetty-util:jar:9.4.51.v20230217:provided - version managed from 9.4.51.v20230217; omitted for duplicate)
+[INFO] |  |     \- (javax.servlet:javax.servlet-api:jar:4.0.1:provided - version managed from 3.1.0; omitted for duplicate)
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.15.2; omitted for duplicate)
+[INFO] |  +- org.apache.xbean:xbean-asm9-shaded:jar:4.23:compile
+[INFO] |  \- com.google.protobuf:protobuf-java:jar:3.23.4:compile
+[INFO] +- org.apache.spark:spark-core_2.13:jar:3.5.0:compile
+[INFO] |  +- (org.scala-lang.modules:scala-parallel-collections_2.13:jar:1.0.4:compile - omitted for duplicate)
+[INFO] |  +- org.apache.avro:avro:jar:1.11.2:compile
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile - version managed from 2.14.2; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.14.2; omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-compress:jar:1.22:compile - omitted for conflict with 1.23.0)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  +- org.apache.avro:avro-mapred:jar:1.11.2:compile
+[INFO] |  |  +- org.apache.avro:avro-ipc:jar:1.11.2:compile
+[INFO] |  |  |  +- (org.apache.avro:avro:jar:1.11.2:compile - omitted for duplicate)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile - version managed from 2.14.2; omitted for duplicate)
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.14.2; omitted for duplicate)
+[INFO] |  |  |  +- (javax.servlet:javax.servlet-api:jar:4.0.1:provided - version managed from 4.0.1; omitted for duplicate)
+[INFO] |  |  |  +- (org.xerial.snappy:snappy-java:jar:1.1.10.1:compile - omitted for conflict with 1.1.10.3)
+[INFO] |  |  |  +- org.tukaani:xz:jar:1.9:compile
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile - version managed from 2.14.2; omitted for duplicate)
+[INFO] |  |  +- (org.apache.hadoop:hadoop-client:jar:3.3.5:provided - omitted for conflict with 3.2.3)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  +- com.google.guava:guava:jar:14.0.1:compile
+[INFO] |  |  +- (com.google.code.findbugs:jsr305:jar:1.3.9:provided - omitted for conflict with 3.0.0)
+[INFO] |  |  \- javax.inject:javax.inject:jar:1:provided
+[INFO] |  +- com.twitter:chill_2.13:jar:0.10.0:compile
+[INFO] |  |  +- (org.scala-lang:scala-library:jar:2.13.6:compile - omitted for conflict with 2.13.8)
+[INFO] |  |  +- (com.twitter:chill-java:jar:0.10.0:compile - omitted for duplicate)
+[INFO] |  |  \- com.esotericsoftware:kryo-shaded:jar:4.0.2:compile
+[INFO] |  |     +- com.esotericsoftware:minlog:jar:1.3.0:compile
+[INFO] |  |     \- org.objenesis:objenesis:jar:2.5.1:compile
+[INFO] |  +- com.twitter:chill-java:jar:0.10.0:compile
+[INFO] |  |  \- (com.esotericsoftware:kryo-shaded:jar:4.0.2:compile - omitted for duplicate)
+[INFO] |  +- (org.apache.xbean:xbean-asm9-shaded:jar:4.23:compile - omitted for duplicate)
+[INFO] |  +- org.apache.hadoop:hadoop-client-api:jar:3.3.4:compile (scope not updated to compile)
+[INFO] |  |  \- (org.xerial.snappy:snappy-java:jar:1.1.8.2:compile - omitted for conflict with 1.1.10.3)
+[INFO] |  +- org.apache.hadoop:hadoop-client-runtime:jar:3.3.4:compile
+[INFO] |  |  +- (org.apache.hadoop:hadoop-client-api:jar:3.3.4:runtime - omitted for duplicate)
+[INFO] |  |  +- (org.xerial.snappy:snappy-java:jar:1.1.8.2:runtime - omitted for conflict with 1.1.10.3)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:runtime - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  |  +- commons-logging:commons-logging:jar:1.1.3:runtime (scope not updated to runtime)
+[INFO] |  |  \- (com.google.code.findbugs:jsr305:jar:3.0.2:runtime - omitted for conflict with 3.0.0)
+[INFO] |  +- org.apache.spark:spark-launcher_2.13:jar:3.5.0:compile
+[INFO] |  |  \- (org.apache.spark:spark-tags_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  +- org.apache.spark:spark-kvstore_2.13:jar:3.5.0:compile
+[INFO] |  |  +- (org.apache.spark:spark-tags_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:14.0.1:provided - omitted for duplicate)
+[INFO] |  |  +- org.fusesource.leveldbjni:leveldbjni-all:jar:1.8:compile
+[INFO] |  |  |  +- org.fusesource.leveldbjni:leveldbjni:jar:1.8:provided
+[INFO] |  |  |  |  +- org.fusesource.hawtjni:hawtjni-runtime:jar:1.9:provided
+[INFO] |  |  |  |  \- org.iq80.leveldb:leveldb-api:jar:0.6:provided
+[INFO] |  |  |  +- org.fusesource.leveldbjni:leveldbjni-osx:jar:1.8:provided
+[INFO] |  |  |  |  \- (org.fusesource.leveldbjni:leveldbjni:jar:1.8:provided - omitted for duplicate)
+[INFO] |  |  |  +- org.fusesource.leveldbjni:leveldbjni-linux32:jar:1.8:provided
+[INFO] |  |  |  |  \- (org.fusesource.leveldbjni:leveldbjni:jar:1.8:provided - omitted for duplicate)
+[INFO] |  |  |  +- org.fusesource.leveldbjni:leveldbjni-linux64:jar:1.8:provided
+[INFO] |  |  |  |  \- (org.fusesource.leveldbjni:leveldbjni:jar:1.8:provided - omitted for duplicate)
+[INFO] |  |  |  +- org.fusesource.leveldbjni:leveldbjni-win32:jar:1.8:provided
+[INFO] |  |  |  |  \- (org.fusesource.leveldbjni:leveldbjni:jar:1.8:provided - omitted for duplicate)
+[INFO] |  |  |  \- org.fusesource.leveldbjni:leveldbjni-win64:jar:1.8:provided
+[INFO] |  |  |     \- (org.fusesource.leveldbjni:leveldbjni:jar:1.8:provided - omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile - version managed from 2.15.2; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.15.2; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile - version managed from 2.15.2; omitted for duplicate)
+[INFO] |  |  \- (org.rocksdb:rocksdbjni:jar:8.3.2:compile - omitted for duplicate)
+[INFO] |  +- org.apache.spark:spark-network-common_2.13:jar:3.5.0:compile
+[INFO] |  |  +- (org.scala-lang:scala-library:jar:2.13.8:compile - omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-all:jar:4.1.94.Final:compile - version managed from 4.1.96.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.94.Final:compile - version managed from 4.1.96.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-epoll:jar:linux-aarch_64:4.1.94.Final:compile - version managed from 4.1.96.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-kqueue:jar:osx-aarch_64:4.1.94.Final:compile - version managed from 4.1.96.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-kqueue:jar:osx-x86_64:4.1.94.Final:compile - version managed from 4.1.96.Final; omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-lang3:jar:3.12.0:compile - version managed from 3.12.0; omitted for duplicate)
+[INFO] |  |  +- (org.fusesource.leveldbjni:leveldbjni-all:jar:1.8:compile - omitted for duplicate)
+[INFO] |  |  +- (org.rocksdb:rocksdbjni:jar:8.3.2:compile - omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.15.2; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile - version managed from 2.15.2; omitted for duplicate)
+[INFO] |  |  +- (io.dropwizard.metrics:metrics-core:jar:4.2.19:compile - version managed from 4.2.19; omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 2.0.7; omitted for duplicate)
+[INFO] |  |  +- (com.google.code.findbugs:jsr305:jar:3.0.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-crypto:jar:1.1.0:compile - omitted for duplicate)
+[INFO] |  |  +- com.google.crypto.tink:tink:jar:1.9.0:compile
+[INFO] |  |  |  +- (com.google.code.findbugs:jsr305:jar:3.0.2:compile - omitted for conflict with 3.0.0)
+[INFO] |  |  |  +- (com.google.code.gson:gson:jar:2.9.1:compile - version managed from 2.10.1; omitted for duplicate)
+[INFO] |  |  |  +- (com.google.protobuf:protobuf-java:jar:3.19.6:compile - omitted for conflict with 3.23.4)
+[INFO] |  |  |  \- joda-time:joda-time:jar:2.12.5:compile
+[INFO] |  |  +- (org.roaringbitmap:RoaringBitmap:jar:0.9.45:compile - omitted for duplicate)
+[INFO] |  |  \- (org.apache.spark:spark-common-utils_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  +- org.apache.spark:spark-network-shuffle_2.13:jar:3.5.0:compile
+[INFO] |  |  +- (org.apache.spark:spark-network-common_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (io.dropwizard.metrics:metrics-core:jar:4.2.19:compile - version managed from 4.2.19; omitted for duplicate)
+[INFO] |  |  +- (org.apache.spark:spark-tags_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 2.0.7; omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:14.0.1:provided - omitted for duplicate)
+[INFO] |  |  \- (org.roaringbitmap:RoaringBitmap:jar:0.9.45:compile - omitted for duplicate)
+[INFO] |  +- org.apache.spark:spark-unsafe_2.13:jar:3.5.0:compile
+[INFO] |  |  +- (org.apache.spark:spark-tags_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.apache.spark:spark-common-utils_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (com.twitter:chill_2.13:jar:0.10.0:compile - omitted for duplicate)
+[INFO] |  |  +- (com.google.code.findbugs:jsr305:jar:3.0.0:compile - omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:14.0.1:provided - omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:provided - version managed from 2.0.7; omitted for duplicate)
+[INFO] |  +- org.apache.spark:spark-common-utils_2.13:jar:3.5.0:compile
+[INFO] |  |  +- (org.apache.spark:spark-tags_2.13:jar:3.5.0:compile - omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.15.2; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.module:jackson-module-scala_2.13:jar:2.13.5:compile - version managed from 2.15.2; omitted for duplicate)
+[INFO] |  |  +- (org.apache.commons:commons-text:jar:1.10.0:compile - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 2.0.7; omitted for duplicate)
+[INFO] |  |  +- org.slf4j:jul-to-slf4j:jar:1.7.36:compile (version managed from 2.0.7)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  |  +- org.slf4j:jcl-over-slf4j:jar:1.7.36:compile (version managed from 2.0.7)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  |  +- org.apache.logging.log4j:log4j-slf4j2-impl:jar:2.20.0:compile
+[INFO] |  |  |  +- (org.apache.logging.log4j:log4j-api:jar:2.17.2:compile - version managed from 2.20.0; omitted for duplicate)
+[INFO] |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 2.0.6; omitted for duplicate)
+[INFO] |  |  |  \- (org.apache.logging.log4j:log4j-core:jar:2.17.2:runtime - version managed from 2.20.0; omitted for duplicate)
+[INFO] |  |  +- org.apache.logging.log4j:log4j-api:jar:2.17.2:compile (version managed from 2.20.0)
+[INFO] |  |  |  \- (org.osgi:org.osgi.core:jar:4.3.1:provided - omitted for conflict with 6.0.0)
+[INFO] |  |  +- org.apache.logging.log4j:log4j-core:jar:2.17.2:compile (version managed from 2.20.0; scope not updated to compile)
+[INFO] |  |  |  +- (org.apache.logging.log4j:log4j-api:jar:2.17.2:compile - version managed from 2.17.2; omitted for duplicate)
+[INFO] |  |  |  \- (org.osgi:org.osgi.core:jar:4.3.1:provided - omitted for conflict with 6.0.0)
+[INFO] |  |  \- org.apache.logging.log4j:log4j-1.2-api:jar:2.17.2:compile (version managed from 2.20.0)
+[INFO] |  |     \- (org.apache.logging.log4j:log4j-api:jar:2.17.2:compile - version managed from 2.17.2; omitted for duplicate)
+[INFO] |  +- javax.activation:activation:jar:1.1.1:compile (scope not updated to compile)
+[INFO] |  +- org.apache.curator:curator-recipes:jar:2.13.0:compile
+[INFO] |  |  \- org.apache.curator:curator-framework:jar:2.13.0:compile
+[INFO] |  |     \- org.apache.curator:curator-client:jar:2.13.0:compile
+[INFO] |  |        +- (org.apache.zookeeper:zookeeper:jar:3.4.8:compile - omitted for conflict with 3.6.3)
+[INFO] |  |        \- (com.google.guava:guava:jar:16.0.1:compile - omitted for conflict with 14.0.1)
+[INFO] |  +- org.apache.zookeeper:zookeeper:jar:3.6.3:compile
+[INFO] |  |  +- org.apache.zookeeper:zookeeper-jute:jar:3.6.3:compile
+[INFO] |  |  |  \- (org.apache.yetus:audience-annotations:jar:0.5.0:compile - omitted for conflict with 0.13.0)
+[INFO] |  |  +- commons-cli:commons-cli:jar:1.2:provided
+[INFO] |  |  +- (org.apache.yetus:audience-annotations:jar:0.5.0:compile - omitted for conflict with 0.13.0)
+[INFO] |  |  +- org.eclipse.jetty:jetty-server:jar:9.4.51.v20230217:provided (version managed from 9.4.39.v20210325)
+[INFO] |  |  |  +- (javax.servlet:javax.servlet-api:jar:4.0.1:provided - version managed from 3.1.0; omitted for duplicate)
+[INFO] |  |  |  +- org.eclipse.jetty:jetty-http:jar:9.4.51.v20230217:provided (version managed from 9.4.51.v20230217)
+[INFO] |  |  |  |  +- (org.eclipse.jetty:jetty-util:jar:9.4.51.v20230217:provided - version managed from 9.4.51.v20230217; omitted for duplicate)
+[INFO] |  |  |  |  +- (org.eclipse.jetty:jetty-io:jar:9.4.51.v20230217:provided - version managed from 9.4.51.v20230217; omitted for duplicate)
+[INFO] |  |  |  |  \- (javax.servlet:javax.servlet-api:jar:4.0.1:provided - version managed from 3.1.0; omitted for duplicate)
+[INFO] |  |  |  \- org.eclipse.jetty:jetty-io:jar:9.4.51.v20230217:provided (version managed from 9.4.51.v20230217)
+[INFO] |  |  |     \- (org.eclipse.jetty:jetty-util:jar:9.4.51.v20230217:provided - version managed from 9.4.51.v20230217; omitted for duplicate)
+[INFO] |  |  +- (org.eclipse.jetty:jetty-servlet:jar:9.4.51.v20230217:provided - version managed from 9.4.39.v20210325; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:provided - version managed from 2.10.5.1; omitted for duplicate)
+[INFO] |  |  +- com.googlecode.json-simple:json-simple:jar:1.1.1:provided
+[INFO] |  |  +- (io.dropwizard.metrics:metrics-core:jar:4.2.19:provided - version managed from 3.2.5; omitted for duplicate)
+[INFO] |  |  \- (org.xerial.snappy:snappy-java:jar:1.1.7:provided - omitted for conflict with 1.1.10.3)
+[INFO] |  +- jakarta.servlet:jakarta.servlet-api:jar:4.0.4:compile (version managed from 4.0.3; scope not updated to compile)
+[INFO] |  +- commons-codec:commons-codec:jar:1.15:compile (version managed from 1.16.0; scope not updated to compile)
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.23.0:compile
+[INFO] |  |  \- org.osgi:org.osgi.core:jar:6.0.0:provided
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.12.0:compile (version managed from 3.12.0; scope not updated to compile)
+[INFO] |  +- org.apache.commons:commons-math3:jar:3.6.1:compile (scope not updated to compile)
+[INFO] |  +- org.apache.commons:commons-text:jar:1.10.0:compile
+[INFO] |  |  \- (org.apache.commons:commons-lang3:jar:3.12.0:compile - version managed from 3.12.0; omitted for duplicate)
+[INFO] |  +- commons-io:commons-io:jar:2.13.0:compile (scope not updated to compile)
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.2:compile (scope not updated to compile)
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  +- com.google.code.findbugs:jsr305:jar:3.0.0:compile
+[INFO] |  +- com.ning:compress-lzf:jar:1.1.2:compile
+[INFO] |  +- org.xerial.snappy:snappy-java:jar:1.1.10.3:compile (scope not updated to compile)
+[INFO] |  |  \- (org.osgi:org.osgi.core:jar:6.0.0:provided - omitted for duplicate)
+[INFO] |  +- org.lz4:lz4-java:jar:1.8.0:compile
+[INFO] |  +- com.github.luben:zstd-jni:jar:1.5.5-4:compile
+[INFO] |  +- org.roaringbitmap:RoaringBitmap:jar:0.9.45:compile
+[INFO] |  |  \- org.roaringbitmap:shims:jar:0.9.45:runtime
+[INFO] |  +- org.scala-lang.modules:scala-xml_2.13:jar:2.1.0:compile
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.13.8:compile - omitted for duplicate)
+[INFO] |  +- org.scala-lang:scala-library:jar:2.13.8:compile
+[INFO] |  +- org.scala-lang:scala-reflect:jar:2.13.8:compile
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.13.8:compile - omitted for duplicate)
+[INFO] |  +- org.json4s:json4s-jackson_2.13:jar:3.7.0-M11:compile
+[INFO] |  |  +- (org.scala-lang:scala-library:jar:2.13.5:compile - omitted for conflict with 2.13.8)
+[INFO] |  |  \- org.json4s:json4s-core_2.13:jar:3.7.0-M11:compile
+[INFO] |  |     +- (org.scala-lang:scala-library:jar:2.13.5:compile - omitted for conflict with 2.13.8)
+[INFO] |  |     +- org.json4s:json4s-ast_2.13:jar:3.7.0-M11:compile
+[INFO] |  |     |  \- (org.scala-lang:scala-library:jar:2.13.5:compile - omitted for conflict with 2.13.8)
+[INFO] |  |     +- org.json4s:json4s-scalap_2.13:jar:3.7.0-M11:compile
+[INFO] |  |     |  \- (org.scala-lang:scala-library:jar:2.13.5:compile - omitted for conflict with 2.13.8)
+[INFO] |  |     \- (com.thoughtworks.paranamer:paranamer:jar:2.8:compile - omitted for duplicate)
+[INFO] |  +- org.glassfish.jersey.core:jersey-client:jar:2.35:compile (version managed from 2.40)
+[INFO] |  |  +- jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile (version managed from 2.1.6)
+[INFO] |  |  |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:provided (version managed from 2.3.2)
+[INFO] |  |  |  |  \- (jakarta.activation:jakarta.activation-api:jar:1.2.2:provided - version managed from 1.2.2; omitted for duplicate)
+[INFO] |  |  |  \- jakarta.activation:jakarta.activation-api:jar:1.2.2:provided (version managed from 1.2.1)
+[INFO] |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  \- org.glassfish.hk2.external:jakarta.inject:jar:2.6.1:compile
+[INFO] |  +- org.glassfish.jersey.core:jersey-common:jar:2.35:compile (version managed from 2.40)
+[INFO] |  |  +- (jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile - version managed from 2.1.6; omitted for duplicate)
+[INFO] |  |  +- (jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile - version managed from 1.3.5; omitted for duplicate)
+[INFO] |  |  +- (org.osgi:org.osgi.core:jar:6.0.0:provided - omitted for duplicate)
+[INFO] |  |  +- (org.glassfish.hk2.external:jakarta.inject:jar:2.6.1:compile - omitted for duplicate)
+[INFO] |  |  \- org.glassfish.hk2:osgi-resource-locator:jar:1.0.3:compile
+[INFO] |  |     +- org.osgi:osgi.core:jar:6.0.0:provided
+[INFO] |  |     \- org.osgi:osgi.cmpn:jar:6.0.0:provided
+[INFO] |  +- org.glassfish.jersey.core:jersey-server:jar:2.35:compile (version managed from 2.40)
+[INFO] |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  +- (org.glassfish.jersey.core:jersey-client:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  +- (jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile - version managed from 2.1.6; omitted for duplicate)
+[INFO] |  |  +- (jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile - version managed from 1.3.5; omitted for duplicate)
+[INFO] |  |  +- (org.glassfish.hk2.external:jakarta.inject:jar:2.6.1:compile - omitted for duplicate)
+[INFO] |  |  +- jakarta.validation:jakarta.validation-api:jar:2.0.2:compile (version managed from 2.0.2)
+[INFO] |  |  \- (org.osgi:org.osgi.core:jar:6.0.0:provided - omitted for duplicate)
+[INFO] |  +- org.glassfish.jersey.containers:jersey-container-servlet:jar:2.35:compile (version managed from 2.40)
+[INFO] |  |  +- (jakarta.servlet:jakarta.servlet-api:jar:4.0.4:provided - version managed from 4.0.3; omitted for duplicate)
+[INFO] |  |  +- (org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  +- (org.glassfish.jersey.core:jersey-server:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  \- (jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile - version managed from 2.1.6; omitted for duplicate)
+[INFO] |  +- org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.35:compile (version managed from 2.40)
+[INFO] |  |  +- (jakarta.servlet:jakarta.servlet-api:jar:4.0.4:provided - version managed from 4.0.3; omitted for duplicate)
+[INFO] |  |  +- jakarta.persistence:jakarta.persistence-api:jar:2.2.3:provided (version managed from 2.2.3)
+[INFO] |  |  +- (org.glassfish.hk2.external:jakarta.inject:jar:2.6.1:compile - omitted for duplicate)
+[INFO] |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  +- (org.glassfish.jersey.core:jersey-server:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  \- (jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6:compile - version managed from 2.1.6; omitted for duplicate)
+[INFO] |  +- org.glassfish.jersey.inject:jersey-hk2:jar:2.35:compile (version managed from 2.40)
+[INFO] |  |  +- (org.glassfish.jersey.core:jersey-common:jar:2.35:compile - version managed from 2.35; omitted for duplicate)
+[INFO] |  |  +- org.glassfish.hk2:hk2-locator:jar:2.6.1:compile
+[INFO] |  |  |  +- (org.glassfish.hk2.external:jakarta.inject:jar:2.6.1:compile - omitted for duplicate)
+[INFO] |  |  |  +- org.glassfish.hk2.external:aopalliance-repackaged:jar:2.6.1:compile
+[INFO] |  |  |  +- org.glassfish.hk2:hk2-api:jar:2.6.1:compile
+[INFO] |  |  |  |  +- (org.glassfish.hk2.external:jakarta.inject:jar:2.6.1:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.glassfish.hk2:hk2-utils:jar:2.6.1:compile - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.glassfish.hk2.external:aopalliance-repackaged:jar:2.6.1:compile - omitted for duplicate)
+[INFO] |  |  |  \- org.glassfish.hk2:hk2-utils:jar:2.6.1:compile
+[INFO] |  |  |     \- (org.glassfish.hk2.external:jakarta.inject:jar:2.6.1:compile - omitted for duplicate)
+[INFO] |  |  \- org.javassist:javassist:jar:3.25.0-GA:compile
+[INFO] |  +- io.netty:netty-all:jar:4.1.94.Final:compile (version managed from 4.1.96.Final)
+[INFO] |  |  +- io.netty:netty-buffer:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-codec:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-codec-http:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-codec-http2:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-codec-socks:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-common:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-handler:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-transport-native-unix-common:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-handler-proxy:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-resolver:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-transport:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-transport-classes-epoll:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- io.netty:netty-transport-classes-kqueue:jar:4.1.94.Final:compile (version managed from 4.1.94.Final)
+[INFO] |  |  +- (io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.94.Final:runtime - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-epoll:jar:linux-aarch_64:4.1.94.Final:runtime - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-kqueue:jar:osx-x86_64:4.1.94.Final:runtime - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  \- (io.netty:netty-transport-native-kqueue:jar:osx-aarch_64:4.1.94.Final:runtime - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  +- io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.94.Final:compile (version managed from 4.1.96.Final; scope not updated to compile)
+[INFO] |  |  +- (io.netty:netty-common:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-buffer:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-unix-common:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  \- (io.netty:netty-transport-classes-epoll:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  +- io.netty:netty-transport-native-epoll:jar:linux-aarch_64:4.1.94.Final:compile (version managed from 4.1.96.Final; scope not updated to compile)
+[INFO] |  |  +- (io.netty:netty-common:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-buffer:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-unix-common:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  \- (io.netty:netty-transport-classes-epoll:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  +- io.netty:netty-transport-native-kqueue:jar:osx-aarch_64:4.1.94.Final:compile (version managed from 4.1.96.Final; scope not updated to compile)
+[INFO] |  |  +- (io.netty:netty-common:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-buffer:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-unix-common:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  \- (io.netty:netty-transport-classes-kqueue:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  +- io.netty:netty-transport-native-kqueue:jar:osx-x86_64:4.1.94.Final:compile (version managed from 4.1.96.Final; scope not updated to compile)
+[INFO] |  |  +- (io.netty:netty-common:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-buffer:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  +- (io.netty:netty-transport-native-unix-common:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  |  \- (io.netty:netty-transport-classes-kqueue:jar:4.1.94.Final:compile - version managed from 4.1.94.Final; omitted for duplicate)
+[INFO] |  +- com.clearspring.analytics:stream:jar:2.9.6:compile
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.10; omitted for duplicate)
+[INFO] |  +- io.dropwizard.metrics:metrics-core:jar:4.2.19:compile (version managed from 4.2.19; scope not updated to compile)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  +- io.dropwizard.metrics:metrics-jvm:jar:4.2.19:compile (version managed from 4.2.19)
+[INFO] |  |  +- (io.dropwizard.metrics:metrics-core:jar:4.2.19:compile - version managed from 4.2.19; omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  +- io.dropwizard.metrics:metrics-json:jar:4.2.19:compile (version managed from 4.2.19)
+[INFO] |  |  +- (io.dropwizard.metrics:metrics-core:jar:4.2.19:compile - version managed from 4.2.19; omitted for duplicate)
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile - version managed from 2.12.7; omitted for duplicate)
+[INFO] |  |  \- (com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile - version managed from 2.12.7.1; omitted for duplicate)
+[INFO] |  +- io.dropwizard.metrics:metrics-graphite:jar:4.2.19:compile (version managed from 4.2.19)
+[INFO] |  |  +- (io.dropwizard.metrics:metrics-core:jar:4.2.19:compile - version managed from 4.2.19; omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
+[INFO] |  +- io.dropwizard.metrics:metrics-jmx:jar:4.2.19:compile (version managed from 4.2.19)
+[INFO] |  |  +- (io.dropwizard.metrics:metrics-core:jar:4.2.19:compile - version managed from 4.2.19; omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:compile - version managed from 1.7.36; omitted for duplicate)
