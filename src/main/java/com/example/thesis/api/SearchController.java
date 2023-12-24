@@ -17,42 +17,44 @@ public class SearchController {
 
 
     @GetMapping("/spark-single-search")
-    public void searchSingleDataWithSpark() {
+    public String searchSingleDataWithSpark() {
         long startTime = System.currentTimeMillis();
         sparkService.processSingleDataWithSpark();
         long endTime = System.currentTimeMillis();
         System.out.println("Time taken with Spark: " + (endTime - startTime) + " ms");
-
+        return endTime - startTime + " ms of search";
     }
 
     @GetMapping("/no-spark-single-search")
-    public void searchSingleDataWithoutSpark() {
+    public String searchSingleDataWithoutSpark() {
         try {
             long startTime = System.currentTimeMillis();
             sparkService.processSingleDataWithoutSpark();
             long endTime = System.currentTimeMillis();
             System.out.println("Time taken with Spark: " + (endTime - startTime) + " ms");
+            return endTime - startTime + " ms of search";
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
     @GetMapping("/spark-multiple-search")
-    public void searchMultipleDataWithSpark() {
+    public String searchMultipleDataWithSpark() {
         long startTime = System.currentTimeMillis();
         sparkService.processMultipleDataWithSpark();
         long endTime = System.currentTimeMillis();
         System.out.println("Time taken with Spark: " + (endTime - startTime) + " ms");
-
+        return endTime - startTime + " ms of search";
     }
 
     @GetMapping("/no-spark-multiple-search")
-    public void searchMultipleDataWithoutSpark() {
+    public String searchMultipleDataWithoutSpark() {
         try {
             long startTime = System.currentTimeMillis();
             sparkService.processMultipleDataWithoutSpark();
             long endTime = System.currentTimeMillis();
             System.out.println("Time taken without Spark: " + (endTime - startTime) + " ms");
+            return endTime - startTime + " ms of search";
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

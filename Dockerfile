@@ -1,25 +1,37 @@
-FROM openjdk:8-jdk-buster
+# Use a base image with Java 11
+FROM openjdk:11-jdk-slim as build
 
+# Install Maven
+RUN apt-get update && \
+    apt-get install -y maven && \
+    rm -rf /var/lib/apt/lists/*
+
+# Set the working directory in the Docker image
 WORKDIR /app
 
-COPY ./target/thesis-0.0.1-SNAPSHOT.jar /app/thesis-application.jar
-COPY data/students1.json /app/students.json
+# Copy the Maven pom.xml and source code into the Docker image
+COPY pom.xml .
+COPY src/ src/
+COPY data/ data/
 
-ENV HADOOP_HOME=/opt/hadoop
-ENV SPARK_HOME=/opt/spark
+# Build the application using Maven
+# This step will download all the dependencies specified in your pom.xml
+RUN mvn clean package -DskipTests
 
-RUN apt-get update && apt-get install -y wget
+# Use a slim version of the Java 11 image for the final image
+FROM openjdk:11-jdk-slim
 
-RUN wget https://archive.apache.org/dist/hadoop/common/hadoop-3.3.4/hadoop-3.3.4.tar.gz -O hadoop.tar.gz \
-    && mkdir -p "$HADOOP_HOME" \
-    && tar -xzf hadoop.tar.gz -C "$HADOOP_HOME" --strip-components=1 \
-    && rm hadoop.tar.gz
+# Copy the built jar file from the build stage
+COPY --from=build /app/target/thesis-0.0.1-SNAPSHOT.jar /usr/app/thesis-0.0.1-SNAPSHOT.jar
 
-RUN wget https://archive.apache.org/dist/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz -O spark.tar.gz \
-    && mkdir -p "$SPARK_HOME" \
-    && tar -xzf spark.tar.gz -C "$SPARK_HOME" --strip-components=1 \
-    && rm spark.tar.gz
+# Copia la cartella 'data' nella directory /usr/app/ del container
+COPY --from=build /app/data/ /usr/app/data/
 
+# Set the working directory in the Docker image
+WORKDIR /usr/app
+
+# Expose the port the application runs on
 EXPOSE 8080
 
-CMD ["java", "-jar", "/app/thesis-application.jar"]
+# Run the jar file
+ENTRYPOINT ["java","-jar","thesis-0.0.1-SNAPSHOT.jar"]
