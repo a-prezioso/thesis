@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "10993830-c711-4e89-87ba-73dc4363d0e6",
+		"name": "thesis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10189232"
+	},
+	"item": [
+		{
+			"name": "single file spark search request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/search/spark-single-search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search",
+						"spark-single-search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20.000 files spark search request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/search/spark-multiple-search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search",
+						"spark-multiple-search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "20.000 files normal search request (without spark)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/search/no-spark-multiple-search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search",
+						"no-spark-multiple-search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "single file normal search request (without spark)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/search/no-spark-single-search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search",
+						"no-spark-single-search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
